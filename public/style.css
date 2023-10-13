@@ -1,0 +1,33 @@
+html {
+  background: teal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hor-grouping, .box-header .box-header-right, .box-header .box-header-left {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.ver-grouping {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.item-container, .item-form-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.box-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.box-header .box-header-left div {
+  margin: 0px 5px;
+}
+.box-header .box-header-right button {
+  height: 20px;
+  width: 20px;
+  margin: 0px 5px;
+}/*# sourceMappingURL=style.css.map */

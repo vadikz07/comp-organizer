@@ -1,0 +1,49 @@
+html{
+    background: teal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+//General purpose
+.hor-grouping{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.ver-grouping{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+//Item styling
+.item-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+}
+
+//Item form styling
+.item-form-container{
+    @extend .item-container;
+}
+
+//Box styling
+.box-header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    .box-header-left{
+        @extend .hor-grouping;
+        div{
+            margin: 0px 5px;
+        }
+    }
+    .box-header-right{
+        @extend .hor-grouping;
+        button{
+            height: 20px;
+            width: 20px;
+            margin: 0px 5px;
+        }
+    }
+}
